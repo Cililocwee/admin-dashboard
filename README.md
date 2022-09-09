@@ -1,2 +1,2 @@
 # admin-dashboard
-Operational Admin Dashboard created using CSS Grid
+Operational Admin Dashboard created using primarily CSS Grid with minor Flexboxes

@@ -53,6 +53,10 @@ ul, li {
     padding: 10px;
     gap: 15px;
     margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .sidebar-menu ul {
@@ -62,6 +66,7 @@ ul, li {
     justify-content: center;
     box-shadow: var(--box-shadow);
 }
+
 
 .sidebar-links {
     height: auto;
@@ -323,22 +328,23 @@ ul, li {
     gap: 4px;
     padding: 15px;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     border-left: 3px solid var(--dark-gray);
 }
 
 .project-card {
     background-color: var(--blue-highlight);
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     color: var(--dark-gray);
     font-size: 1.5rem;
     padding: 12px;
     height: 200px;
-    width: 150px;
+    width: 300px;
     border-radius: 15px;
     display: flex;
+    flex-direction: column;
     border-left: 5px solid var(--dark-gray) ;
 }
 
@@ -346,6 +352,24 @@ ul, li {
 .trending-topic:hover {
     background-color: var(--main-bg-color);
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.project-card p {
+    font-size: .6em;
+    margin: 0px;
+}
+
+.project-card h3 {
+    border-bottom: 3px solid var(--large-scale-base);
+    padding-bottom: 5px;
+}
+
+.project-card-footer {
+    margin-top: auto;
+    text-decoration: none;
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
 }
 
 .announcement-field {
